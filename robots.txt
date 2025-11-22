@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://cashtrack-chi.vercel.app/sitemap.xml
