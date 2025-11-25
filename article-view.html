@@ -39,24 +39,11 @@
   <div id="article-container"></div>
 </main>
 
+<footer class="site-footer">
+        <div class="container">© <span id="year7"></span> CashTrack — All rights reserved.</div>
+    </footer>
+<script src="article-data.js"></script>
 <script>
-const articles = [
-  {
-    id: 1,
-    title: "Calculator for a Mortgage: How to Estimate Your Monthly Payments Easily",
-    content: `<h2>What a Mortgage Calculator Does</h2><p>...</p>` // poora content
-  },
-  {
-    id: 2,
-    title: "Setting a realistic savings target",
-    content: `<p>When setting savings goals, first calculate...</p>`
-  },
-  {
-    id: 3,
-    title: "Smart Ways to Save for Retirement",
-    content: `<p>Retirement planning is essential for financial independence...</p>`
-  }
-];
 
 // Get article ID from URL
 const urlParams = new URLSearchParams(window.location.search);
