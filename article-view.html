@@ -62,6 +62,24 @@ const articles = [
 const urlParams = new URLSearchParams(window.location.search);
 const articleId = parseInt(urlParams.get('id'));
 
+// Mobile menu toggle functionality
+            const mobileMenuToggle = document.querySelector('#mobileMenuToggle');
+            const navLinks = document.querySelector('#navLinks');
+
+            mobileMenuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('show');
+            });
+
+            // Close menu when clicking on a link
+            const navLinksAll = document.querySelectorAll('.nav-links a, .nav-links .dropbtn');
+            navLinksAll.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 600) {
+                        navLinks.classList.remove('show');
+                    }
+                });
+            });
+
 // Find article
 const article = articles.find(a => a.id === articleId);
 
